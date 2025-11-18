@@ -22,7 +22,7 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
+        
 
         $validated = $request->validate([
             'student_id' => 'required|unique:members|max:20',
